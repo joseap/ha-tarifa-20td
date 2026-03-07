@@ -3,26 +3,30 @@
     "step": {
       "user": {
         "data": {
-          "tariff": "Tarifa"
+          "tariff": "Tariff"
         }
       },
       "tariff20": {
         "data": {
-          "P1": "Precio P1 (punta)",
-          "P2": "Precio P2 (llana)",
-          "P3": "Precio P3 (valle)",
-          "diary_cost": "Coste diario"
+          "alquiler_contador": "Counter rent",
+          "bono_social": "Social bonus",
+          "P1": "Price P1 (peak)",
+          "P2": "Price P2 (mid)",
+          "P3": "Price P3 (off-peak)",
+          "diary_cost": "Other costs"
         }
       },
       "tariff30": {
         "data": {
-          "P1": "Precio P1",
-          "P2": "Precio P2",
-          "P3": "Precio P3",
-          "P4": "Precio P4",
-          "P5": "Precio P5",
-          "P6": "Precio P6",
-          "diary_cost": "Coste diario"
+          "alquiler_contador": "Counter rent",
+          "bono_social": "Social bonus",
+          "P1": "Price P1",
+          "P2": "Price P2",
+          "P3": "Price P3",
+          "P4": "Price P4",
+          "P5": "Price P5",
+          "P6": "Price P6",
+          "diary_cost": "Other costs"
         }
       }
     }
@@ -32,26 +36,30 @@
     "step": {
       "init": {
         "data": {
-          "tariff": "Tarifa"
+          "tariff": "Tariff"
         }
       },
       "tariff20": {
         "data": {
-          "P1": "Precio P1 (punta)",
-          "P2": "Precio P2 (llana)",
-          "P3": "Precio P3 (valle)",
-          "diary_cost": "Coste diario"
+          "alquiler_contador": "Counter rent",
+          "bono_social": "Social bonus",
+          "P1": "Price P1 (peak)",
+          "P2": "Price P2 (mid)",
+          "P3": "Price P3 (off-peak)",
+          "diary_cost": "Other costs"
         }
       },
       "tariff30": {
         "data": {
-          "P1": "Precio P1",
-          "P2": "Precio P2",
-          "P3": "Precio P3",
-          "P4": "Precio P4",
-          "P5": "Precio P5",
-          "P6": "Precio P6",
-          "diary_cost": "Coste diario"
+          "alquiler_contador": "Counter rent",
+          "bono_social": "Social bonus",
+          "P1": "Price P1",
+          "P2": "Price P2",
+          "P3": "Price P3",
+          "P4": "Price P4",
+          "P5": "Price P5",
+          "P6": "Price P6",
+          "diary_cost": "Other costs"
         }
       }
     }

@@ -20,6 +20,8 @@ from homeassistant.helpers.selector import (
 )
 
 from .const import (
+    CONF_BONO_SOCIAL,
+    CONF_COUNTER_RENT,
     CONF_DIARY_COST,
     CONF_P1,
     CONF_P2,
@@ -43,7 +45,7 @@ _LOGGER = logging.getLogger(__name__)
 class ConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
     """Config flow for Tariff TD."""
 
-    VERSION = 2
+    VERSION = 4
     tariff = TARIFF_20
 
     @staticmethod
@@ -86,6 +88,22 @@ class ConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
             return self.async_create_entry(data=user_input, title="Tarifa TD")
 
         schema = {
+            vol.Required(CONF_COUNTER_RENT): NumberSelector(
+                NumberSelectorConfig(
+                    min=0,
+                    step="any",
+                    unit_of_measurement="€/dia",
+                    mode=NumberSelectorMode.BOX,
+                )
+            ),
+            vol.Required(CONF_BONO_SOCIAL): NumberSelector(
+                NumberSelectorConfig(
+                    min=0,
+                    step="any",
+                    unit_of_measurement="€/dia",
+                    mode=NumberSelectorMode.BOX,
+                )
+            ),
             vol.Required(CONF_DIARY_COST): NumberSelector(
                 NumberSelectorConfig(
                     min=0,
@@ -132,6 +150,22 @@ class ConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
             return self.async_create_entry(data=user_input, title="Tarifa TD")
 
         schema = {
+            vol.Required(CONF_COUNTER_RENT): NumberSelector(
+                NumberSelectorConfig(
+                    min=0,
+                    step="any",
+                    unit_of_measurement="€/dia",
+                    mode=NumberSelectorMode.BOX,
+                )
+            ),
+            vol.Required(CONF_BONO_SOCIAL): NumberSelector(
+                NumberSelectorConfig(
+                    min=0,
+                    step="any",
+                    unit_of_measurement="€/dia",
+                    mode=NumberSelectorMode.BOX,
+                )
+            ),
             vol.Required(CONF_DIARY_COST): NumberSelector(
                 NumberSelectorConfig(
                     min=0,
@@ -243,8 +277,26 @@ class OptionFlowHandler(config_entries.OptionsFlow):
         p2 = self.config_entry.data.get(CONF_P2, 0)
         p3 = self.config_entry.data.get(CONF_P3, 0)
         diary = self.config_entry.data.get(CONF_DIARY_COST, 0)
+        counter_rent = self.config_entry.data.get(CONF_COUNTER_RENT, 0)
+        bono_social = self.config_entry.data.get(CONF_BONO_SOCIAL, 0)
 
         schema = {
+            vol.Required(CONF_COUNTER_RENT, default=counter_rent): NumberSelector(
+                NumberSelectorConfig(
+                    min=0,
+                    step="any",
+                    unit_of_measurement="€/dia",
+                    mode=NumberSelectorMode.BOX,
+                )
+            ),
+            vol.Required(CONF_BONO_SOCIAL, default=bono_social): NumberSelector(
+                NumberSelectorConfig(
+                    min=0,
+                    step="any",
+                    unit_of_measurement="€/dia",
+                    mode=NumberSelectorMode.BOX,
+                )
+            ),
             vol.Required(CONF_DIARY_COST, default=diary): NumberSelector(
                 NumberSelectorConfig(
                     min=0,
@@ -297,8 +349,26 @@ class OptionFlowHandler(config_entries.OptionsFlow):
         p5 = self.config_entry.data.get(CONF_P5, 0)
         p6 = self.config_entry.data.get(CONF_P6, 0)
         diary = self.config_entry.data.get(CONF_DIARY_COST, 0)
+        counter_rent = self.config_entry.data.get(CONF_COUNTER_RENT, 0)
+        bono_social = self.config_entry.data.get(CONF_BONO_SOCIAL, 0)
 
         schema = {
+            vol.Required(CONF_COUNTER_RENT, default=counter_rent): NumberSelector(
+                NumberSelectorConfig(
+                    min=0,
+                    step="any",
+                    unit_of_measurement="€/dia",
+                    mode=NumberSelectorMode.BOX,
+                )
+            ),
+            vol.Required(CONF_BONO_SOCIAL, default=bono_social): NumberSelector(
+                NumberSelectorConfig(
+                    min=0,
+                    step="any",
+                    unit_of_measurement="€/dia",
+                    mode=NumberSelectorMode.BOX,
+                )
+            ),
             vol.Required(CONF_DIARY_COST, default=diary): NumberSelector(
                 NumberSelectorConfig(
                     min=0,

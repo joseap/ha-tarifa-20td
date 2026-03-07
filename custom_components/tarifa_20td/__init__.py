@@ -9,6 +9,8 @@ from homeassistant.const import Platform
 from homeassistant.helpers import entity_registry as er
 
 from .const import (
+    CONF_BONO_SOCIAL,
+    CONF_COUNTER_RENT,
     CONF_DIARY_COST,
     CONF_P1,
     CONF_P2,
@@ -63,6 +65,8 @@ async def async_migrate_entry(hass: HomeAssistant, config_entry: ConfigEntry) ->
             CONF_P2: config_entry.data["precio_llana"],
             CONF_P3: config_entry.data["precio_valle"],
             CONF_DIARY_COST: config_entry.data["coste_dia"],
+            CONF_COUNTER_RENT: 0.0,
+            CONF_BONO_SOCIAL: 0.0,
         }
 
         hass.config_entries.async_update_entry(config_entry, data=data)
@@ -74,6 +78,14 @@ async def async_migrate_entry(hass: HomeAssistant, config_entry: ConfigEntry) ->
             return {"new_unique_id": new_unique_id}
 
         await er.async_migrate_entries(hass, config_entry.entry_id, _async_migrator)
-        config_entry.version = 3
+        config_entry.version = 4
+
+    if version < 4:
+        data = {
+            CONF_COUNTER_RENT: config_entry.data.get(CONF_COUNTER_RENT, 0.0),
+            CONF_BONO_SOCIAL: config_entry.data.get(CONF_BONO_SOCIAL, 0.0),
+        }
+        hass.config_entries.async_update_entry(config_entry, data={**config_entry.data, **data})
+        config_entry.version = 4
 
     return True

@@ -19,6 +19,8 @@ from homeassistant.components.sensor import (
 from homeassistant.helpers.event import async_track_point_in_time
 
 from .const import (
+    CONF_BONO_SOCIAL,
+    CONF_COUNTER_RENT,
     CONF_DIARY_COST,
     CONF_P1,
     CONF_P2,
@@ -54,6 +56,30 @@ FIXED_DESCRIPTION = SensorEntityDescription(
     native_unit_of_measurement="€",
 )
 
+COUNTER_RENT_DESCRIPTION = SensorEntityDescription(
+    key="alquiler_contador",
+    icon="mdi:counter",
+    name="Alquiler Contador",
+    state_class=SensorStateClass.TOTAL_INCREASING,
+    native_unit_of_measurement="€",
+)
+
+BONO_SOCIAL_DESCRIPTION = SensorEntityDescription(
+    key="bono_social",
+    icon="mdi:heart",
+    name="Bono Social",
+    state_class=SensorStateClass.TOTAL_INCREASING,
+    native_unit_of_measurement="€",
+)
+
+DIARY_COST_DESCRIPTION = SensorEntityDescription(
+    key="coste_diario",
+    icon="mdi:cash-multiple",
+    name="Otros Costes Fijos",
+    state_class=SensorStateClass.TOTAL_INCREASING,
+    native_unit_of_measurement="€",
+)
+
 DUMMY_DESCRIPTION = SensorEntityDescription(
     key="coste_fijo_kwh",
     icon="mdi:currency-eur",
@@ -74,6 +100,8 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry, async_add_e
     p6 = float(entry.data.get(CONF_P6, 0))
     tariff = entry.data[CONF_TARIFF]
     diary = float(entry.data.get(CONF_DIARY_COST, 0))
+    counter_rent = float(entry.data.get(CONF_COUNTER_RENT, 0))
+    bono_social = float(entry.data.get(CONF_BONO_SOCIAL, 0))
 
     tariff_td = await (
         hass.async_add_executor_job(Tariff20TD, p1, p2, p3)
@@ -82,9 +110,12 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry, async_add_e
     )
 
     dummy_sensor = DummySensor(DUMMY_DESCRIPTION, entry.entry_id)
-    fixed_sensor = FixedSensor(FIXED_DESCRIPTION, diary, hass, entry.entry_id)
+    counter_rent_sensor = FixedSensor(COUNTER_RENT_DESCRIPTION, counter_rent, hass, entry.entry_id)
+    bono_social_sensor = FixedSensor(BONO_SOCIAL_DESCRIPTION, bono_social, hass, entry.entry_id)
+    diary_cost_sensor = FixedSensor(DIARY_COST_DESCRIPTION, diary, hass, entry.entry_id)
+    fixed_sensor = FixedSensor(FIXED_DESCRIPTION, counter_rent + bono_social + diary, hass, entry.entry_id)
     tariff_sensor = TariffTDSensor(TARIFF_TD_DESCRIPTION, tariff_td, hass, entry.entry_id)
-    async_add_entities([fixed_sensor, dummy_sensor, tariff_sensor])
+    async_add_entities([fixed_sensor, counter_rent_sensor, bono_social_sensor, diary_cost_sensor, dummy_sensor, tariff_sensor])
 
 
 class TariffTDSensor(SensorEntity):

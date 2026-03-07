@@ -8,21 +8,25 @@
       },
       "tariff20": {
         "data": {
+          "alquiler_contador": "Alquiler contador",
+          "bono_social": "Bono social",
           "P1": "Precio P1 (punta)",
           "P2": "Precio P2 (llana)",
           "P3": "Precio P3 (valle)",
-          "diary_cost": "Coste diario"
+          "diary_cost": "Otros costes"
         }
       },
       "tariff30": {
         "data": {
+          "alquiler_contador": "Alquiler contador",
+          "bono_social": "Bono social",
           "P1": "Precio P1",
           "P2": "Precio P2",
           "P3": "Precio P3",
           "P4": "Precio P4",
           "P5": "Precio P5",
           "P6": "Precio P6",
-          "diary_cost": "Coste diario"
+          "diary_cost": "Otros costes"
         }
       }
     }
@@ -37,21 +41,25 @@
       },
       "tariff20": {
         "data": {
+          "alquiler_contador": "Alquiler contador",
+          "bono_social": "Bono social",
           "P1": "Precio P1 (punta)",
           "P2": "Precio P2 (llana)",
           "P3": "Precio P3 (valle)",
-          "diary_cost": "Coste diario"
+          "diary_cost": "Otros costes"
         }
       },
       "tariff30": {
         "data": {
+          "alquiler_contador": "Alquiler contador",
+          "bono_social": "Bono social",
           "P1": "Precio P1",
           "P2": "Precio P2",
           "P3": "Precio P3",
           "P4": "Precio P4",
           "P5": "Precio P5",
           "P6": "Precio P6",
-          "diary_cost": "Coste diario"
+          "diary_cost": "Otros costes"
         }
       }
     }
