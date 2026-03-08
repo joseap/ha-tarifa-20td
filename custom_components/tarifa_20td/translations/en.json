@@ -9,7 +9,7 @@
       "tariff20": {
         "data": {
           "counter_rent": "Counter rent",
-          "bono_social": "Social bonus",
+          "social_bonus": "Social bonus",
           "P1": "Price P1 (peak)",
           "P2": "Price P2 (mid)",
           "P3": "Price P3 (off-peak)",
@@ -19,7 +19,7 @@
       "tariff30": {
         "data": {
           "counter_rent": "Counter rent",
-          "bono_social": "Social bonus",
+          "social_bonus": "Social bonus",
           "P1": "Price P1",
           "P2": "Price P2",
           "P3": "Price P3",
@@ -42,7 +42,7 @@
       "tariff20": {
         "data": {
           "counter_rent": "Counter rent",
-          "bono_social": "Social bonus",
+          "social_bonus": "Social bonus",
           "P1": "Price P1 (peak)",
           "P2": "Price P2 (mid)",
           "P3": "Price P3 (off-peak)",
@@ -52,7 +52,7 @@
       "tariff30": {
         "data": {
           "counter_rent": "Counter rent",
-          "bono_social": "Social bonus",
+          "social_bonus": "Social bonus",
           "P1": "Price P1",
           "P2": "Price P2",
           "P3": "Price P3",
