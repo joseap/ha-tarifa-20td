@@ -11,7 +11,7 @@ CONF_P6 = "P6"
 
 CONF_DIARY_COST = "diary_cost"
 
-CONF_COUNTER_RENT = "alquiler_contador"
+CONF_COUNTER_RENT = "counter_rent"
 CONF_BONO_SOCIAL = "bono_social"
 
 CONF_TARIFF = "tariff"

@@ -8,7 +8,7 @@
       },
       "tariff20": {
         "data": {
-          "alquiler_contador": "Counter rent",
+          "counter_rent": "Counter rent",
           "bono_social": "Social bonus",
           "P1": "Price P1 (peak)",
           "P2": "Price P2 (mid)",
@@ -18,7 +18,7 @@
       },
       "tariff30": {
         "data": {
-          "alquiler_contador": "Counter rent",
+          "counter_rent": "Counter rent",
           "bono_social": "Social bonus",
           "P1": "Price P1",
           "P2": "Price P2",
@@ -41,7 +41,7 @@
       },
       "tariff20": {
         "data": {
-          "alquiler_contador": "Counter rent",
+          "counter_rent": "Counter rent",
           "bono_social": "Social bonus",
           "P1": "Price P1 (peak)",
           "P2": "Price P2 (mid)",
@@ -51,7 +51,7 @@
       },
       "tariff30": {
         "data": {
-          "alquiler_contador": "Counter rent",
+          "counter_rent": "Counter rent",
           "bono_social": "Social bonus",
           "P1": "Price P1",
           "P2": "Price P2",

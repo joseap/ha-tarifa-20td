@@ -8,7 +8,7 @@
       },
       "tariff20": {
         "data": {
-          "alquiler_contador": "Alquiler contador",
+          "counter_rent": "Alquiler contador",
           "bono_social": "Bono social",
           "P1": "Precio P1 (punta)",
           "P2": "Precio P2 (llana)",
@@ -18,7 +18,7 @@
       },
       "tariff30": {
         "data": {
-          "alquiler_contador": "Alquiler contador",
+          "counter_rent": "Alquiler contador",
           "bono_social": "Bono social",
           "P1": "Precio P1",
           "P2": "Precio P2",
@@ -41,7 +41,7 @@
       },
       "tariff20": {
         "data": {
-          "alquiler_contador": "Alquiler contador",
+          "counter_rent": "Alquiler contador",
           "bono_social": "Bono social",
           "P1": "Precio P1 (punta)",
           "P2": "Precio P2 (llana)",
@@ -51,7 +51,7 @@
       },
       "tariff30": {
         "data": {
-          "alquiler_contador": "Alquiler contador",
+          "counter_rent": "Alquiler contador",
           "bono_social": "Bono social",
           "P1": "Precio P1",
           "P2": "Precio P2",
