@@ -59,10 +59,13 @@ def _calculate_diary_cost(data: dict[str, Any]) -> float:
     impuesto_electrico = float(data.get(CONF_IMPUESTO_ELECTRICO, DEFAULT_IMPUESTO_ELECTRICO)) / 100
     iva = float(data.get(CONF_IVA, DEFAULT_IVA)) / 100
 
-    return (
-        ((bono_social + potencia_valle + potencia_punta) * impuesto_electrico)
-        + (alquiler_contador * iva)
-    )
+    # Se calcula primero:
+    # base_fija = ((bono + valle + punta) * impuesto_electrico) + alquiler_contador
+    base_fija = ((bono_social + potencia_valle + potencia_punta) * impuesto_electrico) + alquiler_contador
+
+    # Y luego:
+    # return base_fija * iva
+    return base_fija * iva
 
 
 def _fixed_cost_schema() -> dict:
