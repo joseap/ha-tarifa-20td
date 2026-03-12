@@ -11,6 +11,18 @@ CONF_P6 = "P6"
 
 CONF_DIARY_COST = "diary_cost"
 
+CONF_BONO_SOCIAL = "bono_social"
+CONF_ALQUILER_CONTADOR = "alquiler_contador"
+CONF_PRECIO_POTENCIA_PUNTA = "precio_potencia_punta"
+CONF_PRECIO_POTENCIA_VALLE = "precio_potencia_valle"
+CONF_OTROS = "otros"
+
+CONF_IMPUESTO_ELECTRICO = "impuesto_electrico"
+CONF_IVA = "iva"
+
+DEFAULT_IMPUESTO_ELECTRICO = 5.11269
+DEFAULT_IVA = 21.0
+
 CONF_TARIFF = "tariff"
 TARIFF_20 = "TARIFF_20"
 TARIFF_30 = "TARIFF_30"

@@ -11,7 +11,13 @@
           "P1": "Precio P1 (punta)",
           "P2": "Precio P2 (llana)",
           "P3": "Precio P3 (valle)",
-          "diary_cost": "Coste diario"
+          "bono_social": "Social bonus",
+          "alquiler_contador": "Meter rental",
+          "precio_potencia_punta": "Peak power price",
+          "precio_potencia_valle": "Valley power price",
+          "otros": "Others",
+          "impuesto_electrico": "% Electricity tax",
+          "iva": "% VAT"
         }
       },
       "tariff30": {
@@ -22,7 +28,13 @@
           "P4": "Precio P4",
           "P5": "Precio P5",
           "P6": "Precio P6",
-          "diary_cost": "Coste diario"
+          "bono_social": "Social bonus",
+          "alquiler_contador": "Meter rental",
+          "precio_potencia_punta": "Peak power price",
+          "precio_potencia_valle": "Valley power price",
+          "otros": "Others",
+          "impuesto_electrico": "% Electricity tax",
+          "iva": "% VAT"
         }
       }
     }
@@ -40,7 +52,13 @@
           "P1": "Precio P1 (punta)",
           "P2": "Precio P2 (llana)",
           "P3": "Precio P3 (valle)",
-          "diary_cost": "Coste diario"
+          "bono_social": "Social bonus",
+          "alquiler_contador": "Meter rental",
+          "precio_potencia_punta": "Peak power price",
+          "precio_potencia_valle": "Valley power price",
+          "otros": "Others",
+          "impuesto_electrico": "% Electricity tax",
+          "iva": "% VAT"
         }
       },
       "tariff30": {
@@ -51,7 +69,13 @@
           "P4": "Precio P4",
           "P5": "Precio P5",
           "P6": "Precio P6",
-          "diary_cost": "Coste diario"
+          "bono_social": "Social bonus",
+          "alquiler_contador": "Meter rental",
+          "precio_potencia_punta": "Peak power price",
+          "precio_potencia_valle": "Valley power price",
+          "otros": "Others",
+          "impuesto_electrico": "% Electricity tax",
+          "iva": "% VAT"
         }
       }
     }

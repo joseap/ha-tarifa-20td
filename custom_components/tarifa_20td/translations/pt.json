@@ -11,7 +11,13 @@
           "P1": "Preço P1 (ponta)",
           "P2": "Preço P2 (plano)",
           "P3": "Preço P3 (vale)",
-          "diary_cost": "Preço de fixo por dia"
+          "bono_social": "Bónus social",
+          "alquiler_contador": "Aluguer do contador",
+          "precio_potencia_punta": "Preço potência ponta",
+          "precio_potencia_valle": "Preço potência vale",
+          "otros": "Outros",
+          "impuesto_electrico": "% Imposto elétrico",
+          "iva": "% IVA"
         }
       },
       "tariff30": {
@@ -22,7 +28,13 @@
           "P4": "Preço P4",
           "P5": "Preço P5",
           "P6": "Preço P6",
-          "diary_cost": "Preço de fixo por dia"
+          "bono_social": "Bónus social",
+          "alquiler_contador": "Aluguer do contador",
+          "precio_potencia_punta": "Preço potência ponta",
+          "precio_potencia_valle": "Preço potência vale",
+          "otros": "Outros",
+          "impuesto_electrico": "% Imposto elétrico",
+          "iva": "% IVA"
         }
       }
     }
@@ -40,7 +52,13 @@
           "P1": "Preço P1 (ponta)",
           "P2": "Preço P2 (plano)",
           "P3": "Preço P3 (vale)",
-          "diary_cost": "Preço de fixo por dia"
+          "bono_social": "Bónus social",
+          "alquiler_contador": "Aluguer do contador",
+          "precio_potencia_punta": "Preço potência ponta",
+          "precio_potencia_valle": "Preço potência vale",
+          "otros": "Outros",
+          "impuesto_electrico": "% Imposto elétrico",
+          "iva": "% IVA"
         }
       },
       "tariff30": {
@@ -51,7 +69,13 @@
           "P4": "Preço P4",
           "P5": "Preço P5",
           "P6": "Preço P6",
-          "diary_cost": "Preço de fixo por dia"
+          "bono_social": "Bónus social",
+          "alquiler_contador": "Aluguer do contador",
+          "precio_potencia_punta": "Preço potência ponta",
+          "precio_potencia_valle": "Preço potência vale",
+          "otros": "Outros",
+          "impuesto_electrico": "% Imposto elétrico",
+          "iva": "% IVA"
         }
       }
     }
